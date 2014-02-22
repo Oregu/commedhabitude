@@ -16,6 +16,6 @@ get '/lo' do
 end
 
 get '/myway' do
-  "I faced it all and I stood tall;<br/>And did it my way."
+  "<p style='margin-top:40px;text-align:center'>I faced it all and I stood tall;<br/>And did it my way.</p>"
 end
 
