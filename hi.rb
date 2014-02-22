@@ -15,3 +15,7 @@ get '/lo' do
   "<h1>Hmmm</h1>"
 end
 
+get '/myway' do
+  "I faced it all and I stood tall;<br/>And did it my way."
+end
+
