@@ -91,7 +91,7 @@ LYR
 
 get '/' do
   ind = rand paroles.length-1
-  "<p style='margin-top:140px;text-align:center'>" +
-    paroles[ind] + "<br/>" + paroles[ind+1] + "</p>"
+  p = rand 2 == 0 ? paroles : lyrics
+  "<p style='margin-top:140px;text-align:center'>" + p[ind] + "<br/>" + p[ind+1] + "</p>"
 end
 
