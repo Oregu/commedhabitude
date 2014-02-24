@@ -1,2 +1,2 @@
-require './hi'
+require './comme'
 run Sinatra::Application
