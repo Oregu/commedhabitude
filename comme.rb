@@ -90,7 +90,7 @@ Comme d'habitude on fera semblant
 LYR
 
 get '/' do
-  p = if rand 2 == 0 then paroles else lyrics
+  p = rand(2) == 0 ? paroles : lyrics
   ind = rand p.length-1
   "<p style='margin-top:140px;text-align:center'>" + p[ind] + "<br/>" + p[ind+1] + "</p>"
 end
