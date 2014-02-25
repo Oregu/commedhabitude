@@ -33,7 +33,7 @@ I've had my fill, my share of losing
 And now, as tears subside, I find it all so amusing
 To think I did all that
 And may I say, not in a shy way,
-"Oh, no, oh, no, not me, I did it my way"
+&ldquo;Oh, no, oh, no, not me, I did it my way&rdquo;
 
 For what is a man, what has he got?
 If not himself, then he has naught
@@ -106,4 +106,10 @@ get '/' do
   <p style="margin-top:140px;text-align:center">#{p[ind]}<br/>#{p[ind+1]}</p>
 </body>
 </html>}
+end
+
+get '/sing' do
+  p = (rand(2) == 0 ? paroles : lyrics).split "\n"
+  ind = rand p.length-1
+  "{l1: '#{p[ind]}', l2:'#{p[ind+1]}'}"
 end
