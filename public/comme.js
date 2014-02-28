@@ -10,3 +10,9 @@ var Singing = React.createClass({
     });
   }
 });
+
+var fetch = function(comp) {
+  $.getJSON("/sing", function(data) {
+    comp.setProps(data);
+  });
+};
