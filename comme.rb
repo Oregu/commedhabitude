@@ -100,10 +100,21 @@ get '/' do
   %{<!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8">
   <title>Comme d'habitude</title>
+  <script src="http://fb.me/react-0.9.0.js"></script>
+  <script src="comme.js"></script>
+  <script type="text/javascript">
+    window.onload = function(){
+      React.renderComponent(
+        Singing({l1:"#{p[ind]}", l2:"#{p[ind+1]}"}),
+        document.getElementById('root'));
+    }
+  </script>
+  <style type="text/css">p{margin:0}</style>
 </head>
 <body>
-  <p style="margin-top:140px;text-align:center">#{p[ind]}<br/>#{p[ind+1]}</p>
+  <div id='root'></div>
 </body>
 </html>}
 end
