@@ -3,9 +3,9 @@
 
 require 'sinatra'
 
-# configure :production do
-#   require 'newrelic_rpm'
-# end
+configure :production do
+  require 'newrelic_rpm'
+end
 
 paroles = <<PAR
 And now, the end is near
