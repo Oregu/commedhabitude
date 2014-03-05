@@ -11,8 +11,26 @@ var Singing = React.createClass({
   }
 });
 
-var fetch = function(comp) {
-  $.getJSON("/sing", function(data) {
-    comp.setProps(data);
+initPage = function(l1, l2) {
+  $(function(){
+    var c = React.renderComponent(
+      Singing({l1:l1,l2:l2}),
+      document.getElementById('root'));
+
+    var fetch = function(comp) {
+      $.getJSON("/sing", function(data) {
+        comp.setProps(data);
+      });
+    };
+
+    $(window).keypress(function(e) {
+      if (e.keyCode == 32) {
+        fetch(c);
+      }
+    });
+
+    $('#root').click(function() {
+      fetch(c);
+    });
   });
-};
+}

@@ -106,19 +106,7 @@ get '/' do
   <script src="http://fb.me/react-0.9.0.js"></script>
   <script src="comme.js"></script>
   <script type="text/javascript">
-    $(function(){
-      var c = React.renderComponent(
-        Singing({l1:"#{p[ind]}", l2:"#{p[ind+1]}"}),
-        document.getElementById('root'));
-      $(window).keypress(function(e) {
-        if (e.keyCode == 32) {
-          fetch(c);
-        }
-      });
-      $('#root').click(function() {
-        fetch(c);
-      });
-    });
+    initPage("#{p[ind]}", "#{p[ind+1]}");
   </script>
   <style type="text/css">p{margin:0}</style>
 </head>
