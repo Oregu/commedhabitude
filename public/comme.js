@@ -13,7 +13,7 @@ var Singing = React.createClass({
         React.DOM.p(null, this.props.l2),
         React.DOM.span({
           style: { cursor: 'pointer' }
-        }, '»'),]
+        }, '»')]
     });
   }
 });
