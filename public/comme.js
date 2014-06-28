@@ -3,10 +3,17 @@ var Singing = React.createClass({
     return React.DOM.div({
       style: {
         textAlign:'center',
-        marginTop: 140 },
+        marginTop: 140
+      },
       children: [
+        React.DOM.span({
+          style: { cursor: 'pointer' }
+        }, '«'),
         React.DOM.p(null, this.props.l1),
-        React.DOM.p(null, this.props.l2) ]
+        React.DOM.p(null, this.props.l2),
+        React.DOM.span({
+          style: { cursor: 'pointer' }
+        }, '»'),]
     });
   }
 });

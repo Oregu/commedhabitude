@@ -102,7 +102,7 @@ get '/' do
 <head>
   <meta charset="utf-8">
   <title>Comme d'habitude</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="http://fb.me/react-0.9.0.js"></script>
   <script src="comme.js"></script>
   <script type="text/javascript">
